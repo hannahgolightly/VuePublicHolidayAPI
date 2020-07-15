@@ -1,9 +1,9 @@
 <template>
   <div class="container-hol">
-    <h3>A public holiday somewhere in the world...</h3>
-    <h2 class="next-hol">
+    <h2>A public holiday somewhere in the world...</h2>
+    <h3 class="next-hol">
       👉 {{ nextHols[0].date }}: It's {{ nextHols[0].name }}
-    </h2>
+    </h3>
   </div>
 </template>
 
@@ -42,18 +42,6 @@ export default {
   border-bottom: 3px solid #fffbdc;
 }
 h2 {
-  color: #803dd6;
-  font-family: 'Corben', cursive;
-  font-size: 2rem;
-  margin-top: 3rem;
-  text-shadow: -3px 2px 0 #fffbdc;
-}
-
-h3 {
-  color: #454545;
-  font-size: 2rem;
-  font-weight: 300;
   text-shadow: -1px 1px 0 #fffbdc;
-  margin-top: 0.5rem;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
   <div class="container">
-    <h2>
-      {{ countryName }}
-    </h2>
-    <h3>2020 public holidays</h3>
+    <h3>{{ countryName }}</h3>
+    <h4>2020 public holidays</h4>
 
     <ResultPanel :holidays="holidays" />
   </div>
@@ -56,22 +54,6 @@ export default {
   min-height: 90vh;
   margin-top: 0rem;
   padding: 1rem;
-}
-
-h2 {
-  color: #803dd6;
-  font-family: 'Corben', cursive;
-  font-size: 2rem;
-  text-shadow: -3px 2px 0 #fffbdc;
-  margin-bottom: 0.2rem;
-}
-h3 {
-  color: #454545;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-top: 0.2rem;
-  margin-bottom: 2.4rem;
-  /* text-shadow: -1px 1px 0 #fffbdc; */
 }
 
 @media screen and (max-width: 1080px) {

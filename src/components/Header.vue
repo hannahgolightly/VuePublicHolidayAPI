@@ -11,7 +11,7 @@
       src="../assets/Holiday_time_logo.png"
       alt="Holiday Time"
       class="logo"
-    /> -->
+    />-->
     <h2>Worldwide Public Holidays</h2>
   </div>
 </template>
@@ -37,20 +37,7 @@ export default {}
   height: 120px;
 }
 
-h1 {
-  font-family: 'Corben', cursive;
-  font-weight: 700;
-  font-size: 3.5rem;
-  color: #803dd6;
-  text-shadow: -6px 4px 0 #fffbdc;
-  margin: 0;
-  padding-top: 2rem;
-}
-
 h2 {
-  color: #454545;
-  font-size: 2rem;
-  font-weight: 300;
   text-shadow: -1px 1px 0 #fffbdc;
   margin-top: 0.5rem;
 }

@@ -1,0 +1,66 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Corben', cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #803dd6;
+  text-shadow: -6px 4px 0 #fffbdc;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+h2 {
+  color: #454545;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h3 {
+  color: #803dd6;
+  font-family: 'Corben', cursive;
+  font-size: 2rem;
+  text-shadow: -3px 2px 0 #fffbdc;
+}
+
+h4 {
+  color: #454545;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem auto;
+}
+
+.button {
+  display: block;
+  width: 120px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  background: linear-gradient(
+    0deg,
+    #ffc45f7b 0%,
+    #ff97567b 40%,
+    #f577517b 100%
+  );
+  border-radius: 0.2rem;
+  border: 2px solid #fffbdc;
+  color: #454545;
+  text-decoration: none;
+}
+.search-button:hover {
+  background: linear-gradient(
+    180deg,
+    #ffc45f7b 0%,
+    #ff97567b 40%,
+    #f577517b 100%
+  );
+}

@@ -7,6 +7,9 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 
+//importing global css file
+import '@/assets/global.css'
+
 new Vue({
   router,
   render: h => h(App)

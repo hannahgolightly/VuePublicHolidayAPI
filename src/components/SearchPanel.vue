@@ -17,13 +17,13 @@
           >
         </select>
         <router-link
-          class="search-button"
+          class="button search-button"
           :to="{
             name: 'results-view',
             params: { countryCode: selected.key }
           }"
-          >SEARCH
-        </router-link>
+          >SEARCH</router-link
+        >
       </form>
     </div>
   </div>
@@ -43,10 +43,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-h1 {
-  padding: 1rem;
-  color: #035c6c;
-}
 form {
   padding: 1rem;
 }
@@ -68,31 +64,6 @@ form {
 }
 
 .search-button {
-  display: block;
   margin: 3rem auto;
-  width: 120px;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.8rem 1.2rem;
-  cursor: pointer;
-  background: linear-gradient(
-    0deg,
-    #ffc45f7b 0%,
-    #ff97567b 40%,
-    #f577517b 100%
-  );
-  border-radius: 0.2rem;
-  border: 2px solid #fffbdc;
-  color: #454545;
-  text-decoration: none;
-}
-.search-button:hover {
-  background: linear-gradient(
-    180deg,
-    #ffc45f7b 0%,
-    #ff97567b 40%,
-    #f577517b 100%
-  );
 }
 </style>
