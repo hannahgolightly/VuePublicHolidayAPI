@@ -36,12 +36,13 @@ export default {
   background-image: url('../assets/jerry-zhang-Y8lCoTRgHPE-unsplash.jpg');
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
   margin: 0;
-  padding: 3rem;
-  border-top: 3px solid #fffbdc;
-  border-bottom: 3px solid #fffbdc;
+  padding: 4.5rem 1rem;
+  border-top: 0.25rem solid #fffbdc;
+  border-bottom: 0.25rem solid #fffbdc;
 }
 h2 {
-  text-shadow: -1px 1px 0 #fffbdc;
+  padding-bottom: 0.5rem;
 }
 </style>

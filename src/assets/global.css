@@ -23,6 +23,7 @@ h2 {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 300;
+  text-shadow: -0.1rem 0.1rem 0 #fffbdc;
   margin: 0;
 }
 
@@ -38,17 +39,19 @@ h3 {
 h4 {
   color: #454545;
   font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 500;
-  margin: 1rem auto;
 }
 
 .button {
   display: block;
-  width: 120px;
+  width: 144px;
+  box-sizing: border-box;
   font-family: inherit;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0.8rem 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   background: linear-gradient(
     0deg,

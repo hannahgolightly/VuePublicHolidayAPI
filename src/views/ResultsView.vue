@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container-results">
     <h3>{{ countryName }}</h3>
-    <h4>2020 public holidays</h4>
+    <h4>2020 Public Holidays</h4>
 
     <ResultPanel :holidays="holidays" />
   </div>
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.container {
+.container-results {
   background: linear-gradient(
     45deg,
     #ffc45f7b 0%,
@@ -53,7 +53,16 @@ export default {
   background-color: #fff6e8;
   min-height: 90vh;
   margin-top: 0rem;
-  padding: 1rem;
+  padding: 0;
+}
+
+h3 {
+  padding: 3rem 0 1rem 0;
+}
+
+h4 {
+  padding: 1rem auto;
+  margin: 0 auto 2rem 0;
 }
 
 @media screen and (max-width: 1080px) {

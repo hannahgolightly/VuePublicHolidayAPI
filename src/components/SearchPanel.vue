@@ -43,27 +43,22 @@ export default {
 </script>
 
 <style lang="css" scoped>
-form {
-  padding: 1rem;
-}
 .panel {
   width: 60%;
   height: auto;
-
   background-color: #fff1e6c1;
-  margin: 3rem auto 8rem auto;
-  /* border: 3px solid #fffbdc; */
-  padding: 3.5rem 1rem 3rem 1rem;
+  margin: 0 auto 7rem auto;
+  padding: 4.5rem 1rem;
 }
 .country-select {
-  width: 250px;
-  height: 40px;
+  width: 15rem;
+  height: 2.5rem;
   font-family: inherit;
   padding: 0.4rem;
-  margin: 1rem 0;
+  box-sizing: border-box;
 }
 
 .search-button {
-  margin: 3rem auto;
+  margin: 4.5rem auto 0 auto;
 }
 </style>

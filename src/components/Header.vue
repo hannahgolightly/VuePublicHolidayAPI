@@ -28,7 +28,6 @@ export default {}
 }
 
 h2 {
-  text-shadow: -0.1rem 0.1rem 0 #fffbdc;
   padding: 1rem 0 2rem 0;
 }
 

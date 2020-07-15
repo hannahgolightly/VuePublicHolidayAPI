@@ -46,10 +46,10 @@ export default {
   background-color: #fff6e8;
   min-height: 90vh;
   margin-top: 0rem;
-  padding: 1rem 0 0 0;
+  padding: 0;
 }
 
 h3 {
-  margin-top: 3rem;
+  padding: 3rem 0;
 }
 </style>
