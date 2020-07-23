@@ -44,7 +44,7 @@ export default {
     #f577517b 100%
   );
   background-color: #fff6e8;
-  min-height: 90vh;
+  min-height: 80vh;
   margin-top: 0rem;
   padding: 0;
 }

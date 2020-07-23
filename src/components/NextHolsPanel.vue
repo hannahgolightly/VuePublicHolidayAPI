@@ -2,7 +2,8 @@
   <div class="container-hol">
     <h2>A public holiday somewhere in the world...</h2>
     <h3 class="next-hol">
-      👉 {{ nextHols[0].date }}: It's {{ nextHols[0].name }}
+      👉 {{ nextHols[0].date }}: It's {{ nextHols[0].name }} in
+      {{ countryName }}
     </h3>
   </div>
 </template>
@@ -11,11 +12,11 @@
 import HolidayService from '@/services/HolidayService.js'
 
 export default {
-  //   props: ['countryCode'],
   data() {
     return {
-      nextHols: []
-      //   countryName: ''
+      nextHols: [''],
+      countryCode: '',
+      countryName: ''
     }
   },
 
@@ -23,12 +24,31 @@ export default {
     HolidayService.getNextHols()
       .then(response => {
         this.nextHols = response.data
+        this.countryCode = response.data[0].countryCode
+        return HolidayService.getCountryName(this.countryCode)
+      })
+      .then(response => {
+        this.countryName = response.data.commonName
       })
       .catch(error => {
-        console.log('There was an error' + error.response)
+        console.log('There was an error ' + error.response)
       })
   }
 }
+
+// axios
+//   .get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p1')
+//   .then(response => {
+//     this.setState({ p1Location: response.data });
+//     return axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p2');
+//   })
+//   .then(response => {
+//     this.setState({ p2Location: response.data });
+//     return axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p3');
+//   })
+//   .then(response => {
+//     this.setState({ p3Location: response.data });
+//   }).catch(error => console.log(error.response));
 </script>
 
 <style lang="css" scoped>
