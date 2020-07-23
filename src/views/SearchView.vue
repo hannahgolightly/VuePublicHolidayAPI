@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Select a country...</h2>
+    <h3>Select a country...</h3>
 
     <SearchPanel :countries="countries" />
     <NextHolsPanel />
@@ -44,16 +44,12 @@ export default {
     #f577517b 100%
   );
   background-color: #fff6e8;
-  min-height: 90vh;
+  min-height: 80vh;
   margin-top: 0rem;
-  padding: 1rem 0 0 0;
+  padding: 0;
 }
 
-h2 {
-  color: #803dd6;
-  font-family: 'Corben', cursive;
-  font-size: 2rem;
-  margin-top: 3rem;
-  text-shadow: -3px 2px 0 #fffbdc;
+h3 {
+  padding: 3rem 0;
 }
 </style>

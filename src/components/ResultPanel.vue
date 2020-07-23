@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="results-table">
     <div class="grid-container header">
       <div>Date</div>
       <div>
-        Name of holiday<br />
-        (local name)
+        Name of holiday
+        <br />(local name)
       </div>
       <div>Name of holiday</div>
       <div>Global holiday?</div>
@@ -22,9 +22,9 @@
       <div v-if="holiday.global">&nbsp;&#10004;&nbsp;</div>
       <div v-else>&nbsp;&#10007;&nbsp;</div>
       <div>
-        <span v-for="(county, index) in holiday.counties" :key="index">
-          {{ county }}
-        </span>
+        <span v-for="(county, index) in holiday.counties" :key="index">{{
+          county
+        }}</span>
       </div>
       <div>{{ holiday.type }}</div>
     </div>
@@ -40,16 +40,19 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.results-table {
+  padding-bottom: 4rem;
+}
 .grid-container {
   display: grid;
   width: 80%;
   background-color: #fff1e6c1;
-  margin: auto;
+  margin: 0.25rem auto;
   grid-template-columns: 12.5% repeat(2, 25%) repeat(3, 12.5%);
 }
 
 .grid-container div {
-  line-height: 1.2rem;
+  line-height: 1.25rem;
   margin: 0.5rem 0;
 }
 
